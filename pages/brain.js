@@ -1,5 +1,5 @@
 /* =========================================================
-   ROSEMONT BRAIN — full page
+   EVOLVE BRAIN — full page
    The same engine as the floating assistant, with the data
    it reads laid out so nobody has to take it on trust.
    ========================================================= */

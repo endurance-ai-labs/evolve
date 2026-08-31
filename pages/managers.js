@@ -93,7 +93,7 @@ function render() {
         <div class="rp-doc-head">
           ${RP_MARK_SVG(52)}
           <div style="flex:1">
-            <div class="word">ROSEMONT <span>PARTNERS</span></div>
+            <div class="word">EVOLVE <span>PRIVATE WEALTH</span></div>
             <div class="sub">Investment Research</div>
             <div class="big-title">Manager Due Diligence</div>
             <div class="subtitle">${esc(m.name)} &middot; prepared ${fmtDate(RP.asOf)}</div>

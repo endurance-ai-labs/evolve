@@ -1,5 +1,5 @@
 /* =========================================================
-   ROSEMONT BRAIN
+   EVOLVE BRAIN
    Floating assistant, present on every page. Answers are
    generated client-side from the live household, portfolio
    and fund data, so nothing it says can drift from what the

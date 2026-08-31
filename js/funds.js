@@ -1,5 +1,5 @@
 /* =========================================================
-   ROSEMONT PARTNERS — approved list, fund universe and
+   EVOLVE PRIVATE WEALTH — approved list, fund universe and
    manager due-diligence files.
 
    Every fund, strategy and manager here is INVENTED.

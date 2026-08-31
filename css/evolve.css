@@ -1,5 +1,5 @@
 /* ============================================================
-   ROSEMONT PARTNERS - portal skin layer
+   EVOLVE PRIVATE WEALTH - portal skin layer
    Loaded AFTER theme.css + demo.css. Token overrides re-brand the
    framework to Evolve slate / claret / brass; below that, portal
    components (mode toggle, documents, approval chains, print).
@@ -417,7 +417,7 @@ tr.avb-drv td {
 
 
 /* ============================================================
-   ROSEMONT ADDITIONS
+   EVOLVE ADDITIONS
    ============================================================ */
 
 /* ---- Claret section eyebrow (brand-only use of the accent) ---- */

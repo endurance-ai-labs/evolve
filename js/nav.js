@@ -1,5 +1,5 @@
 /* ============================================================
-   ROSEMONT PARTNERS — portal navigation
+   EVOLVE PRIVATE WEALTH — portal navigation
    Sticky headline marquee + market tape + topbar with grouped
    nav, section subnav, theme toggle and a global adviser/client
    view mode. Same framework as the CFP/Margins portal.

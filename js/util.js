@@ -1,5 +1,5 @@
 /* =========================================================
-   ROSEMONT PARTNERS — shared utilities
+   EVOLVE PRIVATE WEALTH — shared utilities
    Formatters, persona/permission model, approval chains,
    e-signature, source chips, and the household math that
    every page reads from. Demo build, fictional data.
