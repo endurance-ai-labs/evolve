@@ -62,6 +62,13 @@ function render() {
   const bookValue = visibleHouseholds().reduce((s, h) => s + h.mv, 0);
 
   $("#app").innerHTML = `
+  ${researchConsole({
+    title: "Research console",
+    kinds: ["Fund", "Manager", "Asset class"],
+    addKinds: ["Fund", "Manager", "Strategy", "Co-investment"],
+    placeholder: "Search strategies, managers, vintages\u2026",
+  })}
+
   ${toolbar("Alternatives Platform",
     `<span class="demo-chip mut">${privFunds.length} strategies</span>
      <span class="demo-chip mut">${ALT_RELATIONSHIPS.length} manager relationships</span>
@@ -171,6 +178,8 @@ function render() {
       cannot walk away from. The extra step is capacity: knowing what the manager will actually give us before
       anything is promised to a household.</div>`)}
   </div>
+
+  ${coverageQueue()}
 
   ${disclosure("Every fund, manager and allocation on this page is invented.")}`;
 }
