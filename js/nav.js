@@ -222,8 +222,8 @@ function renderTopbar(opts = {}) {
       <a class="brand" href="${BASE}/" style="cursor:pointer;text-decoration:none">
         ${RP_MARK_SVG(30)}
         <div class="rp-brand-text">
-          <div class="rp-word">Evolve <span>Private Wealth</span></div>
-          <div class="rp-word-sub">${subtitle}</div>
+          <div class="rp-word">evolve</div>
+          <div class="rp-word-sub">Private Wealth</div>
         </div>
       </a>
       <nav class="nav nav-desktop">${groupLinks}</nav>

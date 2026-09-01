@@ -741,3 +741,58 @@ a.rp-note, .rp-note a { display: inline-block; padding: 5px 0; }
   .demo-kpi { padding: 14px 14px 13px; }
   .demo-kpi .v { font-size: 22px; }
 }
+
+
+/* ---- Brand ------------------------------------------------------------
+   Taken from the firm's own mark: a heavy lowercase wordmark in cream on
+   espresso. Espresso carries structure, a warm bronze is the interactive
+   accent, and the light ground is warmed to cream so the brown reads as
+   intentional rather than muddy. Green and red stay reserved for gains
+   and losses. */
+:root {
+  --color-blue:        #C9A46B;
+  --color-blue-light:  #DFC08A;
+  --color-blue-pale:   rgba(201, 164, 107, 0.20);
+  --color-deep-violet: #8A6A3C;
+  --color-violet-pale: rgba(138, 106, 60, 0.14);
+  --rp-claret:         #E4D3B4;
+  --rp-claret-soft:    rgba(228, 211, 180, 0.14);
+  --rp-brass:          #A98B5E;
+  --rp-brass-soft:     rgba(169, 139, 94, 0.14);
+  --rp-ink:            #1F1508;
+  --gradient-cosmic-b: linear-gradient(90deg, #150E05, #1F1508 50%, #A98B5E);
+}
+[data-theme="light"] {
+  --color-blue:        #6B4A22;
+  --color-blue-light:  #8A6A3C;
+  --color-blue-pale:   #F2EADC;
+  --rp-claret:         #1F1508;
+  --rp-claret-soft:    rgba(31, 21, 8, 0.06);
+  --rp-brass:          #8A6A3C;
+  --rp-brass-soft:     rgba(138, 106, 60, 0.10);
+  /* A warm cream ground, so the espresso brand reads as chosen. */
+  --color-bg:          #FBF8F1;
+  --color-bg-2:        #FFFDF8;
+  --color-bg-3:        #F5F0E4;
+  --color-border:      #E6DECD;
+  --color-border-subtle: #EFE9DC;
+}
+[data-theme="light"] body { background: #FBF8F1 !important; }
+.nav-cta {
+  background: linear-gradient(135deg, #1F1508, #3A2810) !important;
+  box-shadow: 0 2px 10px rgba(31, 21, 8, 0.32) !important;
+}
+/* The wordmark: heavy, lowercase, tight, as the firm sets it. */
+.brand .rp-word {
+  font-family: var(--font-sans); font-size: 22px; font-weight: 900;
+  letter-spacing: -0.035em; text-transform: lowercase; color: var(--rp-ink);
+  line-height: 0.95;
+}
+[data-theme="dark"] .brand .rp-word { color: var(--color-cloud-whisper); }
+.brand .rp-word span { color: inherit; }
+.brand .rp-word-sub {
+  font-size: 7.5px; letter-spacing: 3.4px; text-transform: uppercase;
+  color: var(--color-text-muted); margin-top: 5px;
+}
+.brand .rp-mark { color: var(--rp-ink); }
+[data-theme="dark"] .brand .rp-mark { color: var(--color-cloud-whisper); }

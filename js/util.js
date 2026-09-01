@@ -236,14 +236,22 @@ function renderSignIn() {
 
 /* ---------- brand mark ---------- */
 function RP_MARK_SVG(size = 30) {
-  return `<svg class="rp-mark" width="${size}" height="${size}" viewBox="0 0 64 64" aria-hidden="true">
-    <circle cx="32" cy="32" r="30.5" fill="none" stroke="var(--rp-brass)" stroke-width="1.4"/>
-    <circle cx="32" cy="32" r="23" fill="none" stroke="var(--rp-claret)" stroke-width="1.4"/>
-    <path d="M32 9.2 L39.5 24.4 L56.3 26.8 L44.1 38.7 L47.0 55.4 L32 47.5 L17.0 55.4 L19.9 38.7 L7.7 26.8 L24.5 24.4 Z"
-      fill="none" stroke="var(--rp-claret)" stroke-width="1.3" stroke-linejoin="round" opacity="0.55"/>
-    <circle cx="32" cy="32" r="6" fill="var(--rp-claret)"/>
+  /* Unique ids per instance: several marks can share one page. */
+  const uid = Math.abs((size * 2654435761) % 100000).toString(36);
+  return `<svg class="rp-mark" width="${size}" height="${size}" viewBox="0 0 100 100" aria-hidden="true">
+    <defs>
+      <mask id="rpEvE${uid}">
+        <rect width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="50" r="23" fill="#000"/>
+        <path d="M50 50 L98 63 A50 50 0 0 1 63 98 Z" fill="#000"/>
+      </mask>
+      <clipPath id="rpEvBowl${uid}"><circle cx="50" cy="50" r="46"/></clipPath>
+    </defs>
+    <circle cx="50" cy="50" r="46" fill="currentColor" mask="url(#rpEvE${uid})"/>
+    <rect x="0" y="43" width="100" height="13" fill="currentColor" clip-path="url(#rpEvBowl${uid})"/>
   </svg>`;
 }
+
 
 /* ---------- source-of-truth chips ---------- */
 const SRC = {
