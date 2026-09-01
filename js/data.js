@@ -18,13 +18,13 @@
 const RP = {
   name: "Evolve Private Wealth",
   legal: "Evolve Private Wealth, LLC",
-  tagline: "Adaptive wealth. Enduring legacy.",
+  tagline: "Wealth strategy that moves with you",
   est: 2022,
   crd: "demo environment",
   registration: "SEC-registered investment adviser",
-  standard: "Fee-only fiduciary. Employee-owned. Open architecture. Custody held away.",
-  hq: "Los Angeles, California",
-  hq2: "New York, New York",
+  standard: "A family-office experience built for the modern era. We act as the family's quarterback across every dimension of their wealth.",
+  hq: "10877 Wilshire Boulevard, Suite 1406, Los Angeles, CA 90024",
+  hq2: "150 East 52nd Street, Suite 27002, New York, NY 10022",
   phone: "Published on evolveprivatewealth.com",
   email: "Published on evolveprivatewealth.com",
   asOf: "2026-08-28",
@@ -39,7 +39,6 @@ const RP = {
 
   headcount: { total: 24, advisors: 7, investment: 4, service: 6, operations: 3, planning: 2, corporate: 1, leadership: 1 },
 
-  /* Tiered on total household assets. The single source of every fee figure. */
   feeSchedule: [
     { from: 0,        upTo: 2000000,  rate: 0.0095, label: "First $2M" },
     { from: 2000000,  upTo: 5000000,  rate: 0.0080, label: "Next $3M" },
@@ -48,17 +47,30 @@ const RP = {
     { from: 25000000, upTo: null,     rate: 0.0035, label: "Above $25M" },
   ],
 
+  /* Clearing and custody through Fidelity, as disclosed on the firm's site. */
   custodians: [
-    { name: "Schwab Advisor Services", share: 0.61 },
-    { name: "Fidelity Institutional",  share: 0.28 },
-    { name: "Pershing",                share: 0.11 },
+    { name: "Fidelity Institutional",  share: 0.88 },
+    { name: "Schwab Advisor Services", share: 0.08 },
+    { name: "Pershing",                share: 0.04 },
   ],
 
   serviceTiers: [
-    { id: "Founders", minAssets: 25000000, meetings: 4, calls: "Unlimited", planning: "Full family office", reporting: "Monthly", team: "Managing partner + adviser + service" },
+    { id: "Family Office", minAssets: 25000000, meetings: 4, calls: "Unlimited", planning: "Full family office", reporting: "Monthly", team: "Managing partner + adviser + service" },
     { id: "Private",  minAssets: 5000000,  meetings: 3, calls: "Unlimited", planning: "Comprehensive",      reporting: "Quarterly", team: "Adviser + service" },
     { id: "Core",     minAssets: 1000000,  meetings: 2, calls: "As needed", planning: "Goals-based",        reporting: "Quarterly", team: "Adviser + shared service" },
     { id: "Institutional", minAssets: 5000000, meetings: 4, calls: "Unlimited", planning: "Spending policy & IPS", reporting: "Quarterly", team: "CIO + adviser" },
+  ],
+
+  /* The eight integrated services the firm advertises. */
+  services: [
+    "Comprehensive financial, liquidity and cash flow planning",
+    "Consolidated reporting and balance sheet management",
+    "Investment tax strategy",
+    "Institutional-grade investment management",
+    "Tax and estate planning coordination",
+    "Integrated banking and lending solutions",
+    "Charitable and impact giving",
+    "A network of specialised professionals",
   ],
 
   targets: { nnaAnnual: 340000000, organicGrowth: 0.125, retention: 0.981, householdsPerAdvisor: 48 },
@@ -443,10 +455,10 @@ const FIRM = (function () {
   /* The firm's full segment mix. The detailed 40 are a representative sample
      drawn from it; the tail carries the remaining relationships. */
   const firmSegments = [
-    { id: "UHNW",          label: "Ultra high net worth ($25M+)",    households: 38,  share: 0.542 },
-    { id: "HNW",           label: "High net worth ($5\u201325M)",    households: 164, share: 0.331 },
-    { id: "Emerging",      label: "Next generation ($1\u20135M)",    households: 88,  share: 0.071 },
-    { id: "Institutional", label: "Foundations & family entities",   households: 22,  share: 0.056 },
+    { id: "UHNW",          label: "Business owners & founders",        households: 84,  share: 0.372 },
+    { id: "HNW",           label: "Multi-generational families",       households: 96,  share: 0.318 },
+    { id: "Emerging",      label: "Corporate executives",              households: 88,  share: 0.196 },
+    { id: "Institutional", label: "Sports & entertainment",            households: 44,  share: 0.114 },
   ].map((seg) => {
     const detailed = HOUSEHOLDS.filter((h) => h.segment === seg.id);
     const aum = Math.round(TARGET_AUM * seg.share);

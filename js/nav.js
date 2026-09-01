@@ -127,13 +127,13 @@ const TICKER = [
 ];
 
 const MARQUEE = [
-  ["INVESTMENT COMMITTEE", "Q3 house view published \u2014 duration extended to neutral, private credit raised to overweight"],
-  ["ALTERNATIVES", "Twenty years of manager relationships: four capacity-constrained funds reopened to existing investors this quarter"],
-  ["EVOLVE", "Employee-owned and fee-only since 2022 \u2014 open architecture, custody held away"],
-  ["RESEARCH", "Meridian Global Macro placed on watch following the departure of its co-portfolio manager"],
-  ["OPERATIONS", "Q3 quarterly billing run opens 30 September \u2014 exception review with advisers closes the 26th"],
-  ["PRIVATE MARKETS", "Four capital calls totalling $2.8M land in the next 30 days across 11 households"],
-  ["EVOLVE", "Adaptive wealth, enduring legacy \u2014 built to anticipate what is next, not react to it"],
+  ["EVOLVE", "Wealth strategy that moves with you \u2014 a family-office experience built for the modern era"],
+  ["WHO WE SERVE", "Business owners and founders \u00b7 multi-generational families \u00b7 sports and entertainment \u00b7 corporate executives"],
+  ["PLANNING", "Comprehensive financial, liquidity and cash flow planning across every household this quarter"],
+  ["REPORTING", "Consolidated reporting and balance sheet management \u2014 the whole picture, not just the custodied part"],
+  ["ALTERNATIVES", "Institutional-grade investment management: four capacity-constrained funds reopened to existing investors"],
+  ["COORDINATION", "Tax and estate planning coordinated with the client's own counsel and accountants"],
+  ["EVOLVE", "Employee-owned and fee-only \u2014 custody held away at Fidelity"],
 ];
 
 function renderTopbar(opts = {}) {

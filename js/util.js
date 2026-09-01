@@ -118,7 +118,7 @@ const PERSONAS = [
     init: "W",  perms: { firm: 0, revenue: 0, book: 0, research: 0, trading: 0, compliance: 0, external: 1 }, access: "Client portal" },
 ];
 
-const SEG_LABEL = { UHNW: "UHNW", HNW: "HNW", Emerging: "Next gen", Institutional: "Institutional" };
+const SEG_LABEL = { UHNW: "Founders", HNW: "Multi-generational", Emerging: "Executives", Institutional: "Sports & entertainment" };
 const segLabel = (id) => SEG_LABEL[id] || id;
 
 /* Advisor personas see only their own book. */
